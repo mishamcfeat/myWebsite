@@ -1,9 +1,15 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
+import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { navLinks } from "../constants";
-import { logo, menu, close } from "../assets";
+import { logo, menu, close, linkedin, github, resume, cv } from "../assets";
+
+const iconHover = {
+  hover: { y: -5 },
+};
+
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -26,20 +32,10 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav
-      className={`${styles.paddingX
-        } w-full flex items-center py-5 fixed top-0 z-20 ${scrolled ? "bg-primary" : "bg-transparent"
-        }`}
-    >
+    <nav className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 ${scrolled ? "bg-primary" : "bg-transparent"}`}>
       <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
-        <Link
-          to='/'
-          className='flex items-center gap-2'
-          onClick={() => {
-            setActive("");
-            window.scrollTo(0, 0);
-          }}
-        >
+
+        <Link to='/' className='flex items-center gap-2' onClick={() => { setActive(""); window.scrollTo(0, 0); }}>
           <img src={logo} alt='logo' className='w-9 h-9 object-contain' />
           <p className='text-white text-[18px] font-bold cursor-pointer flex '>
             Misha McFeat &nbsp;
@@ -47,18 +43,35 @@ const Navbar = () => {
           </p>
         </Link>
 
-        <ul className='list-none hidden sm:flex flex-row gap-10'>
+        <ul className='list-none hidden sm:flex flex-row gap-10 mx-auto'>
           {navLinks.map((nav) => (
-            <li
-              key={nav.id}
-              className={`${active === nav.title ? "text-white" : "text-secondary"
-                } hover:text-white text-[18px] font-medium cursor-pointer`}
-              onClick={() => setActive(nav.title)}
-            >
+            <li key={nav.id} className={`${active === nav.title ? "text-white" : "text-secondary"} hover:text-white text-[18px] font-medium cursor-pointer`}
+              onClick={() => setActive(nav.title)}>
               <a href={`#${nav.id}`}>{nav.title}</a>
             </li>
           ))}
         </ul>
+
+        <div className='hidden sm:flex gap-4'>
+          <motion.div variants={iconHover} whileHover="hover">
+            <a href='https://www.linkedin.com/in/michael-mcfeat-1b2a79217/' target='_blank' rel='noopener noreferrer'>
+              <img src={linkedin} alt='LinkedIn' className='w-7 cursor-pointer' onClick={() => window.open('https://www.linkedin.com/in/michael-mcfeat-1b2a79217/', "_blank")} />
+            </a>
+          </motion.div>
+
+          <motion.div variants={iconHover} whileHover="hover">
+            <a href='https://github.com/mishamcfeat' target='_blank' rel='noopener noreferrer'>
+              <img src={github} alt='GitHub' className='w-7 cursor-pointer' onClick={() => window.open('https://github.com/mishamcfeat', "_blank")} />
+            </a>
+          </motion.div>
+
+          <motion.div variants={iconHover} whileHover="hover">
+            <a href='https://drive.google.com/file/d/1fGWZO_W0abO3s_mzV7dh8vYk3o-64UaD/view?usp=sharing' target='_blank' rel='noopener noreferrer'>
+              <img src={resume} alt='Resume' className='w-7 cursor-pointer' onClick={() => window.open('https://drive.google.com/file/d/1fGWZO_W0abO3s_mzV7dh8vYk3o-64UaD/view?usp=sharing', "_blank")} />
+            </a>
+          </motion.div>
+        </div>
+
 
         <div className='sm:hidden flex flex-1 justify-end items-center'>
           <img

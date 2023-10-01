@@ -32,7 +32,11 @@ export const navLinks = [
     title: "About",
   },
   {
-    id: "work",
+    id: "projects",
+    title: "Projects",
+  },
+  {
+    id: "education",
     title: "Education",
   },
   {
@@ -204,14 +208,13 @@ const projects = [
   {
     name: "H.EAT Delivery App",
     points: [
-      "Backend with FastAPI: Leverage the power of FastAPI for building efficient and scalable APIs. Benefit from automatic interactive API documentation, data validation, and asynchronous request handling.",
-      "Data Validation with Pydantic: Ensure that the data your application processes are accurate and in the correct format. Pydantic's data validation and settings management using Python type annotations guarantee data integrity.",
-      "Database Migrations with Alembic: Maintain and upgrade your database schema seamlessly. Alembic provides the ability to autogenerate migration scripts and manage version control.",
-      "OAuth2 & JWT Authentication: Implement a secure authentication system using OAuth2 with Password (and hashing), including JWT tokens. Protect your user's data and provide secure endpoints for your services.",
-      "PostgreSQL Integration: Use the power of PostgreSQL for robust, scalable, and relational data storage. Ensure data integrity and benefit from powerful query capabilities.",
-      "Responsive Frontend with React: Harness the React library's component-based architecture for building user interfaces. Ensure a dynamic, efficient, and smooth user experience.",
-      "Styling with SCSS: Utilize SCSS to write clean, maintainable, and efficient styles. Benefit from variables, nesting, mixins, and more.",
-      "Interactivity with JavaScript & JSX: Implement rich interactive UI components and enhance user interactions using the blend of JavaScript and JSX.",
+      "FastAPI Backend: Utilize FastAPI for efficient, scalable APIs with auto-generated documentation, data validation, and async handling.",
+      "Pydantic Data Validation: Ensure data accuracy and format; Pydantic offers validation and settings management via Python annotations.",
+      "OAuth2 & JWT Authentication: Securely authenticate with OAuth2, JWT tokens, and password hashing; safeguard user data and endpoints.",
+      "PostgreSQL Integration: Leverage PostgreSQL for robust, scalable relational data storage with powerful querying.",
+      "Alembic for Database Migrations: Seamlessly manage and upgrade database schemas; autogenerate migration scripts with Alembic.",
+      "React Frontend: Use React's component-based design for dynamic and smooth UIs.",
+      "SCSS Styling: Craft efficient styles with SCSS, benefiting from its variables, nesting, and mixins.",
     ],
     tags: [
       {
@@ -228,6 +231,7 @@ const projects = [
       },
     ],
     image: heat,
+    website_link: "https://www.google.com",
     source_code_link: "https://github.com/mishamcfeat/FOOD_DELIVERY_APP",
   },
   {
@@ -254,6 +258,7 @@ const projects = [
       },
     ],
     image: jobit,
+    website_link: "https://www.google.com",
     source_code_link: "https://github.com/mishamcfeat/Azure-Monitor-Project",
   },
 ];

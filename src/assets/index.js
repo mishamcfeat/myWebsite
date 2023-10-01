@@ -1,9 +1,14 @@
 import logo from "./logo.png";
+import misha from './misha.png'
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
 import web from "./web.png";
 import github from "./github.png";
+import linkedin from "./linkedin.png";
+import resume from "./resume.png";
+import cv from "./CV.pdf";
+import website from "./website.png"
 import menu from "./menu.svg";
 import close from "./close.svg";
 
@@ -34,11 +39,16 @@ import tripguide from "./tripguide.png";
 
 export {
   logo,
+  misha,
   backend,
   creator,
   mobile,
   web,
   github,
+  linkedin,
+  resume,
+  website,
+  cv,
   menu,
   close,
   css,

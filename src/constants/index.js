@@ -21,7 +21,7 @@ import {
   warwick,
   stolaves,
   heat,
-  jobit,
+  azure_monitor,
   tripguide,
   restapi,
 } from "../assets";
@@ -141,12 +141,11 @@ const experiences = [
     iconBg: "#383E56",
     date: "September 2023 - Present",
     points: [
-      "Data engineering (SQL, web scraping, AWS S3, AWS RDS)",
-      "Data science (Data cleaning, preprocessing & visualisation, A/B testing, feature engineering, statistical modelling)",
-      "Machine learning (machine learning model selection and implementation, recommendation systems, computer vision)",
-      "Machine learning engineering (AWS EC2, AWS SageMaker, building APIs, Docker, Kubernetes)",
-      "MLOps (feature stores, CI/CD/CT, AWS CloudFormation, Prometheus, Grafana)",
-    ],
+      "Data Processing, Wrangling, and Transformation (Formats: JSON, CSV, XLSX, YAML; Python Libraries: Pandas, Numpy, Pyspark; ETL & ELT, Apache Spark, Kafka, AWS S3)",
+      "Web APIs and SQL Databases (FastAPI routing, SQL: CRUD, JOINs, CTEs; Python Libraries: psycopg2, SQLAlchemy)",
+      "Cloud and Big Data Engineering (AWS Services: IAM, CLI, S3, EC2, RDS, VPC, API Gateway, MWAA; Big Data: Data Pipelines, Data Ingestion, Batch vs. Real-Time Processing, Enterprise Data Warehouses; Kafka Tools: Kafka, Kafka-Python)",
+      "Data Orchestration and Advanced Cloud Platforms (Apache Airflow, MSK, MSK Connect, Databricks, Kinesis)"
+  ],
   },
   {
     title: "Electronic Engineer",
@@ -257,7 +256,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
+    image: azure_monitor,
     website_link: "https://www.google.com",
     source_code_link: "https://github.com/mishamcfeat/Azure-Monitor-Project",
   },

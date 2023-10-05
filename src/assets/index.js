@@ -34,7 +34,7 @@ import aicore from "./company/aicore.png";
 import warwick from "./company/warwick.png";
 
 import heat from "./heat.png";
-import jobit from "./jobit.png";
+import azure_monitor from "./azure_monitor.png";
 import tripguide from "./tripguide.png";
 
 export {
@@ -70,6 +70,6 @@ export {
   aicore,
   warwick,
   heat,
-  jobit,
+  azure_monitor,
   tripguide,
 };

@@ -33,8 +33,8 @@ const Contact = () => {
 
     emailjs
       .send(
-        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+        'service_ad64ffd',
+        'template_cjdy5de',
         {
           from_name: form.name,
           to_name: "Michael McFeat",
@@ -42,7 +42,7 @@ const Contact = () => {
           to_email: "misha.mcfeat@gmail.com",
           message: form.message,
         },
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+        '6Ld-7RCNzmzfj2PhA'
       )
       .then(
         () => {
@@ -59,7 +59,7 @@ const Contact = () => {
           setLoading(false);
           console.error(error);
 
-          alert("Ahh, something went wrong. Please try again.");
+          alert("Something went wrong. Please try again.");
         }
       );
   };

@@ -145,7 +145,7 @@ const experiences = [
       "Web APIs and SQL Databases (FastAPI routing, SQL: CRUD, JOINs, CTEs; Python Libraries: psycopg2, SQLAlchemy)",
       "Cloud and Big Data Engineering (AWS Services: IAM, CLI, S3, EC2, RDS, VPC, API Gateway, MWAA; Big Data: Data Pipelines, Data Ingestion, Batch vs. Real-Time Processing, Enterprise Data Warehouses; Kafka Tools: Kafka, Kafka-Python)",
       "Data Orchestration and Advanced Cloud Platforms (Apache Airflow, MSK, MSK Connect, Databricks, Kinesis)"
-  ],
+    ],
   },
   {
     title: "Electronic Engineer",
@@ -236,11 +236,14 @@ const projects = [
   {
     name: "Azure VM Metrics",
     points: [
-      "Set up an Azure Virtual Machine with SSH key authentication for secure access.",
-      "Enable guest-level monitoring on the VM using Azure Monitor and diagnostics extensions.",
-      "Connect to the VM via SSH, and set up the required Python environment and libraries.",
-      "Fetch desired VM metrics like 'Percentage CPU', 'Available Memory Bytes', and disk operations using a Python script.",
-      "Process, analyze, and visualize the metric data with Pandas and Matplotlib in Python.",
+      "Monitored Azure VM: Successfully monitored and visualized Azure Virtual Machine metrics using Python.",
+      "Established Essentials: Set up an Azure account, used Python (3.6+), managed an Azure VM, and secured SSH access.",
+      "Created VM: Initiated a Linux VM on Azure and implemented SSH key authentication for enhanced security.",
+      "Achieved Guest-Level Monitoring: Integrated Azure Monitor & diagnostics extensions; activated 'Basic Metrics'.",
+      "Set Up Python on VM: Connected using SSH, installed Python 2, and integrated the azure-monitor library.",
+      "Configured Azure Monitor: Navigated through the Azure portal to 'Monitor'; added vital metrics such as 'Percentage CPU' and 'Memory'.",
+      "Fetched Metrics: Utilized Python along with libraries like azure-identity, azure-monitor-query, pandas, and matplotlib to extract and archive metrics.",
+      "Conducted Data Analysis: Processed metric data using Pandas and visualized the results with matplotlib.",
     ],
     tags: [
       {

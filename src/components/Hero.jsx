@@ -18,10 +18,10 @@ const Hero = () => {
         <div className="flex flex-row w-full">
           <div className="w-3/5">
             <h1 className={`${styles.heroHeadText} text-white`}>
-              Hi, I'm <span className='text-[#915EFF]'>Misha</span>
+              Hi, I'm <span className='text-[#915EFF]'>Michael</span>
             </h1>
             <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-              I am a software engineer, specialising <br className='sm:block hidden' />
+              Also known as Misha. I am a software engineer, specialising <br className='sm:block hidden' />
               in frontend and backend technologies.
             </p>
           </div>
